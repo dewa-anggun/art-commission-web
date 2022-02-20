@@ -19,7 +19,6 @@ header {
 }
 
 nav {
-    position: sticky;
     background-color: white;
     padding: 5px;
     top: 0;
@@ -92,7 +91,9 @@ main {
     width: 90%;
     margin-left: 5%;
     padding: 10px;
+    position: relative;
 }
+
 
 .column {
     display: flex;
@@ -155,8 +156,33 @@ h3 {
     color: #333333;
 }
 
+.order-image {
+    width: 100%;
+}
+
+.order-coa {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.button-order {
+    margin: 0 auto 50px auto;
+    display: block;
+    background-color: #9999ff;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+.button-order:hover {
+    border: 2px solid #9999ff;
+    background-color: white;
+    color: #9999ff;
+}
+
 footer {
-    /* background-color: #9999ff; */
     background-image: linear-gradient(#ffffff, #9999ff);
     height: 100px;
     padding-top: 40px;
