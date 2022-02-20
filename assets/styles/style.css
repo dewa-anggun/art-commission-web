@@ -48,7 +48,7 @@ main {
 .banner {
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url("../images/banner-image.png");
     height: 90%;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -182,6 +182,20 @@ h3 {
     color: #9999ff;
 }
 
+img {
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+#intro {
+    display: block;
+    margin: 20px auto 100px auto;
+    max-width: 60%;
+    text-align: center;
+    color: #333333;
+}
+
 footer {
     background-image: linear-gradient(#ffffff, #9999ff);
     height: 100px;
@@ -189,4 +203,28 @@ footer {
     color: white;
     font-weight: 600;
     text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    nav li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+    nav a:hover {
+        color: #9999ff;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .packets {
+        width: 100%;
+    }
+    .order-image {
+        width: 200%;
+        margin: auto;
+        transform: translate(-25%, 0);
+    }
 }
